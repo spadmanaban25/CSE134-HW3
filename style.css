@@ -1,0 +1,11 @@
+html {
+    border:2px solid black;
+}
+
+background-section {
+    display: block;
+    background-color: lightblue; /* Default Background */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
