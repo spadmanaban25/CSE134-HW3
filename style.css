@@ -106,7 +106,7 @@ background-section {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-color);
-    /* Default Background */
+
     padding: var(--default-pad-size);
     border-radius: var(--default-radius);
     border: 0.25rem solid black;
