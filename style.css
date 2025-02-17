@@ -105,10 +105,10 @@
 background-section {
     display: flex;
     flex-direction: column;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color, lightblue);
 
-    padding: var(--default-pad-size);
-    border-radius: var(--default-radius);
+    padding: var(--default-pad-size, 20);
+    border-radius: var(--default-radius, 8);
     border: 0.25rem solid black;
 }
 
@@ -142,8 +142,13 @@ background-section {
 .steve-img {
     opacity: 0;
     animation: stamp 0.5s ease-out forwards;
-    max-width: 100%;
+    max-width: 100dvw;
     height: auto;
+}
+
+picture, img, svg{
+    object-fit:cover;
+    object-position:center top;
 }
 
 .formBtn {
@@ -161,11 +166,14 @@ nav {
 
     a:hover {
         transform: scale(1.2);
-        color: green;
+        color: color(display-p3 0 0.5 0);
     }
 }
 
 .gandhiQuote {
+    position: fixed;
+    left: 50%;
+    bottom:-10;
     background-color: color-mix(in srgb, red 50%, blue 50%);
     color: white;
 }
